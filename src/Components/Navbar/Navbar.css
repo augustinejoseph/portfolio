@@ -1,0 +1,38 @@
+.navbar_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: .4rem 22rem;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    z-index: 10;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+    padding: .4rem 0;
+    border-bottom: 1px solid rgb(228, 227, 227);
+}
+.navbar_link{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navbar_link > span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    color: grey;
+}
+.navbar_link > img{
+    height: 1.6rem;
+    padding-right: .3rem;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar_link > span{
+        display: none;
+    }
+}

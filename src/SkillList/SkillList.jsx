@@ -1,0 +1,18 @@
+export const skillList = [
+    {skillName: "MongoDB" , url : "/src/Constants/SkillsIcons/mongodb.png", description: "Document-oriented DB with high availability."},
+    {skillName: "AWS" , url : "/src/Constants/SkillsIcons/aws.png" , description: "A cloud provided with immense tech support."},
+    {skillName: "GCP" , url : "/src/Constants/SkillsIcons/gcp.png" , description: "Googles cloud services provider."},
+    {skillName: "Docker" , url : "/src/Constants/SkillsIcons/docker.png" , description: "Containerization platform for applications."},
+    {skillName: "Django" , url : "/src/Constants/SkillsIcons/django.png" , description: "Python-based web framework."},
+    {skillName: "CSS" , url : "/src/Constants/SkillsIcons/css.png" , description: "Cascading Style Sheets for web styling."},
+    {skillName: "Git" , url : "/src/Constants/SkillsIcons/git.png" , description: "Distributed version control system."},
+    {skillName: "GitHub" , url : "/src/Constants/SkillsIcons/github.png" , description: "Web-based Git repository hosting."},
+    {skillName: "GraphQL" , url : "/src/Constants/SkillsIcons/graphql.png" , description: " Query language for APIs."},
+    {skillName: "HTML" , url : "/src/Constants/SkillsIcons/html.png" , description: "Markup language for web content."},
+    {skillName: "JavaScript" , url : "/src/Constants/SkillsIcons/javascript.png" , description: "High-level programming language for web development."},
+    {skillName: "Linux" , url : "/src/Constants/SkillsIcons/linux.png" , description: "Open-source operating system."},
+    {skillName: "Windows" , url : "/src/Constants/SkillsIcons/windows.png" , description: "Operating system by Microsoft."},
+    {skillName: "PostgreSQL" , url : "/src/Constants/SkillsIcons/postgresql.png" , description: " Open-source relational database."},
+    {skillName: "React" , url : "/src/Constants/SkillsIcons/react.png" , description: "JavaScript library for building UI components."},
+    {skillName: "REST API" , url : "/src/Constants/SkillsIcons/restapi.png" , description: "Architecture for web services."},
+] 
