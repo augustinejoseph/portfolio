@@ -13,9 +13,12 @@ import {
 import { skillList } from "../../SkillList/SkillList";
 import { projectList } from "../../ProjectList/ProjectList";
 import { useEffect, useState } from "react";
+
+
 const HomePage = () => {
   const [articles, setArticles] = useState([]);
   const [author, setAuthor] = useState([]);
+
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -25,6 +28,8 @@ const HomePage = () => {
     };
     fetchArticles();
   }, []);
+
+
   return (
     <div className="homepage_container">
       <div className="homepage_hero_section_container">
