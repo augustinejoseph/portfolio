@@ -1,7 +1,9 @@
 import "./SkillCard.css";
 
+
 const SkillCard = (props) => {
   const { title, pictureUrl, description } = props;
+  console.log('skill card', props);
   return (
     <div className="skillcard">
       <img src={pictureUrl} alt="skill" />

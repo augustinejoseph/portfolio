@@ -4,3 +4,4 @@ export const EMAIL = 'developer.augustine@gmail.com'
 export const PHONE = '+91-6238083182'
 export const MEDIUM_PROFILE_URL = 'https://augustinejoseph.medium.com/'
 export const GITHUB_LINK = "https://github.com/augustinejoseph"
+export const LINKEDIN_LINK = "https://www.linkedin.com/in/augustinjoseph/"
