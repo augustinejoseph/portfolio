@@ -35,7 +35,7 @@ const ArticlesCard = (props) => {
           </div>
           <div className="articles_card__body">
             <span className="tag tag-blue">{categories[0]}</span>
-            <h4 onClick={() => handleArticleClick(link)}>{truncatedTitle}</h4>
+            <h4 className="articles_card_title" onClick={() => handleArticleClick(link)}>{truncatedTitle}</h4>
             <p>{cleanedDescription}</p>
           </div>
           <div className="articles_card__footer">

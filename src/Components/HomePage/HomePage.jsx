@@ -44,9 +44,9 @@ const HomePage = () => {
           <div className="homepage_subheading">Full Stack Web Developer</div>
           <div className="homepage_description">
             <p>
-              Hi. I am Augustine Joseph. I am a creative full stack web
-              developer with experience in Python, Django, React, Javascript,
-              AWS, GCP, Docker and web hosting.{" "}
+              Hi... I am Augustine Joseph. I am a creative Full Stack Web
+              Developer with experience in Python, Django, React, Javascript,
+              AWS, GCP, Docker, Microservices and web hosting.{" "}
             </p>
           </div>
           <div className="homepage_description_contact_container">
@@ -95,11 +95,12 @@ const HomePage = () => {
           {projectList.map((project) => (
             <ProjectCard
               key={project.imageUrl}
-              imageUrl={project.imageUrl}
+              imageUrl={project.imageUrl[0]}
               projectName={project.projectName}
               description={project.description}
               gitHubLink={project.gitHubLink}
               liveLink={project.liveLink}
+              project_slug={project.project_slug}
             />
           ))}
         </div>

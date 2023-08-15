@@ -5,5 +5,5 @@ export const stripTags = (html) => {
     return text.length > 210 ? text.slice(0, 220) + "..." : text;
   };
 export const truncateTitle = (title) => {
-    return title.length > 50 ? title.slice(0, 47) + "..." : title;
+    return title.length > 47 ? title.slice(0, 47) + "..." : title;
   };

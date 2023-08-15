@@ -85,9 +85,10 @@
 }
 
 .homepage_skills_title {
+    text-decoration: underline;
     text-align: center;
     font-size: 2rem;
-    color: black;
+    color: rgb(94, 91, 91);
     padding: 3rem 0;
 }
 
@@ -96,7 +97,7 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.3rem;
 }
 
 

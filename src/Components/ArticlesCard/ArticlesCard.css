@@ -6,9 +6,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: 1rem;
   max-width: 1200px;
   margin-block: 2rem;
-  gap: 2rem;
+  /* gap: 3rem; */
+}
+.articles_container:hover{
+  transform: scale(1.05);
 }
 
 .articles_card__header > img {
@@ -30,6 +34,11 @@
 background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
 
+}
+
+.articles_card_title{
+  min-height: 3rem;
+  /* background-color: red; */
 }
 
 

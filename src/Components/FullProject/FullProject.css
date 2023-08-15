@@ -1,0 +1,50 @@
+.full_project_container {
+    display: flex;
+    justify-content: center; 
+    min-height: 95vh;
+    /* background-color: red; */
+  }
+  
+  .full_project_images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.full_project_images > img{
+    height: 190px;
+    /* border: 1px solid grey; */
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.full_project_images > img:hover{
+    transform: scale(1.1);
+}
+  
+  .full_project_name{
+    background-color: #f0f8ff;
+    padding: .2rem; 
+    margin-top: 7rem;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  .full_project_description{
+    text-align: center;
+    color: grey;
+    font-size: large;
+  }
+
+  .full_project_features > span{
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    padding: 2rem;
+
+  }
+
+  .full_project_features{
+    margin-top: 3rem;
+    text-align: center;
+    
+  }

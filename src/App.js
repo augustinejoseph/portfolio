@@ -1,5 +1,5 @@
 import './App.css';
-import {HomePage, Navbar,  Router, Routes, Route} from './imports'
+import {HomePage, Navbar, FullProject,  Router, Routes, Route, Footer} from './imports'
 
 function App() {
   return (
@@ -8,7 +8,9 @@ function App() {
     <Navbar />
       <Routes>
           <Route path = "/" element= {<HomePage />} />
+          <Route path='/project/:projectName' element={<FullProject />} />
       </Routes>
+    <Footer />
     </Router>
   );
 }

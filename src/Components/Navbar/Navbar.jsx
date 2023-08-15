@@ -5,17 +5,27 @@ import {
   linkedin,
   medium,
   phone,
+  home,
   MEDIUM_PROFILE_URL,
   PHONE,
   EMAIL,
   GITHUB_LINK,
   LINKEDIN_LINK,
+  useNavigate,
 
 } from "../../imports";
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <div className="navbar_container ">
       <div className="navbar_link_wrapper">
+      <div className="navbar_link"
+        onClick={() => navigate("/")}
+        >
+          <img src={home} alt="" />
+          <span>Home</span>
+        </div>
+
         <div className="navbar_link"
         onClick={() => window.open(LINKEDIN_LINK, "_blank")}
         >

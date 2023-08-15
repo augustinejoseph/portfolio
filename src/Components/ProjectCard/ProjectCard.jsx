@@ -1,10 +1,12 @@
 import "./ProjectCard.css";
+import { useNavigate } from "../../imports";
 
 const Projectprojectcard = (props) => {
+  const navigate = useNavigate();
   const handelLinkClick = (liveLink) => {
     window.open(liveLink, "_blank");
   };
-  const { imageUrl, projectName, description, gitHubLink, liveLink } = props;
+  const {project_slug, imageUrl, projectName, description, gitHubLink, liveLink  } = props;
   return (
     <div className="projectprojectcard_container">
       <div className="projectcard">
@@ -28,8 +30,20 @@ const Projectprojectcard = (props) => {
               Source Code
             </button>
           )}
+          <button
+            onClick={() => navigate(`/project/${project_slug}`)}
+            className="projectcard__button secondary"
+          >
+            View More
+          </button>
         </div>
+        
       </div>
+      {/* <div className="projectcard_mobileonly_button_container">
+      <button className="projectcard_viewmore_button_mobile_only">
+          View More
+        </button>
+      </div> */}
     </div>
   );
 };

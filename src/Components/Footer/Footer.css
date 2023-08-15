@@ -1,0 +1,8 @@
+.footer_container{
+    background-color: rgb(250, 217, 217);
+    height: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-top: 1px solid rgb(228, 227, 227);
+    background-color: rgb(245, 245, 245);
+}
