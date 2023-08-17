@@ -12,26 +12,25 @@ import {
   GITHUB_LINK,
   LINKEDIN_LINK,
   useNavigate,
-
 } from "../../imports";
 const Navbar = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="navbar_container ">
       <div className="navbar_link_wrapper">
-      <div className="navbar_link"
-        onClick={() => navigate("/")}
-        >
+        <div className="navbar_link" onClick={() => navigate("/")}>
           <img src={home} alt="" />
           <span>Home</span>
         </div>
 
-        <div className="navbar_link"
-        onClick={() => window.open(LINKEDIN_LINK, "_blank")}
+        <div
+          className="navbar_link"
+          onClick={() => window.open(LINKEDIN_LINK, "_blank")}
         >
           <img src={linkedin} alt="" />
           <span>Linkedin</span>
         </div>
+
         <div
           onClick={() => (window.location.href = `mailto:${EMAIL}`)}
           className="navbar_link"
