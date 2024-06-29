@@ -23,7 +23,7 @@ const FullProject = () => {
 
         <div className="full_project_links_container">
           {projectDetails.liveLink && (
-            <button onClick={() => openLink(projectDetails.liveLink)}>
+            <button disabled={projectDetails.liveLinkExpired} onClick={() => openLink(projectDetails.liveLink)}>
               Live Link
             </button>
           )}
@@ -59,7 +59,7 @@ const FullProject = () => {
         <div className="full_project_images_container">
           <span className="full_project_subtitle">Images</span>
           <div className="full_project_images">
-            {projectDetails.imageUrl.map((url, index) => (
+            {projectDetails.imageUrl.sort().map((url, index) => (
               <img key={index} src={url} alt={`datalens.live${index}`} />
             ))}
           </div>

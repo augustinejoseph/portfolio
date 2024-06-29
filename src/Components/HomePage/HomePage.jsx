@@ -8,13 +8,15 @@ import {
   RESUME_URL,
   EMAIL,
   PHONE,
-  portrait,
+  profilePicture,
 } from "../../imports";
+// import AWS from '../../Constants/SillIcons/aws.png'
 import { skillList } from "../../SkillList/SkillList";
 import { projectList } from "../../ProjectList/ProjectList";
 import { useEffect, useState } from "react";
-
-
+console.log('====================================');
+console.log("projuect List", projectList);
+console.log('====================================');
 const HomePage = () => {
   const [articles, setArticles] = useState([]);
   const [author, setAuthor] = useState([]);
@@ -29,12 +31,11 @@ const HomePage = () => {
     fetchArticles();
   }, []);
 
-
   return (
     <div className="homepage_container">
       <div className="homepage_hero_section_container">
         <div className="homepage_profile_picture">
-          <img src={portrait} alt="portrait" />
+          <img src={profilePicture} alt="portrait" />
         </div>
         <div className="homepage_title_container">
           <div className="homepage_title">
@@ -114,12 +115,14 @@ const HomePage = () => {
         <div className="homepage_articles_wrapper">
           <div className="homepage_articles">
             {articles?.map((article) => (
+              
+
               <ArticlesCard
                 key={article.pubDate}
                 title={article.title}
                 link={article.link}
                 pubDate={article.pubDate}
-                imageUrl={article.thumbnail}
+                imageUrl={(article['description']).toString().match(/<img[^>]+src="([^">]+)"/)[1]}
                 description={article.content}
                 categories={article.categories}
                 author={article.author}

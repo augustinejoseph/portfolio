@@ -7,6 +7,7 @@ const Projectprojectcard = (props) => {
     window.open(liveLink, "_blank");
   };
   const {project_slug, imageUrl, projectName, description, gitHubLink, liveLink  } = props;
+  console.log('imageUrl',imageUrl);
   return (
     <div className="projectprojectcard_container">
       <div className="projectcard">
