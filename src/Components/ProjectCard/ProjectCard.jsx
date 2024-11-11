@@ -6,16 +6,15 @@ const Projectprojectcard = (props) => {
   const handelLinkClick = (liveLink) => {
     window.open(liveLink, "_blank");
   };
-  const {project_slug, imageUrl, projectName, description, gitHubLink, liveLink  } = props;
-  console.log('imageUrl',imageUrl);
+  const { project_slug, imageUrl, projectName, description, gitHubLink, liveLink, liveLinkExpired } = props;
   return (
     <div className="projectprojectcard_container">
       <div className="projectcard">
-        <img className="projectcard_image" src={imageUrl} alt="" />
+        <img className="projectcard_image" src={`/static/media/${imageUrl}`} alt="" />
         <div className="projectcard__content">
           <p className="projectcard__title">{projectName}</p>
           <p className="projectcard__description">{description}</p>
-          {liveLink && (
+          {(liveLink && !liveLinkExpired) && (
             <button
               onClick={() => handelLinkClick(liveLink)}
               className="projectcard__button"
@@ -38,13 +37,8 @@ const Projectprojectcard = (props) => {
             View More
           </button>
         </div>
-        
+
       </div>
-      {/* <div className="projectcard_mobileonly_button_container">
-      <button className="projectcard_viewmore_button_mobile_only">
-          View More
-        </button>
-      </div> */}
     </div>
   );
 };

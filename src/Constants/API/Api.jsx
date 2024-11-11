@@ -5,3 +5,6 @@ export const PHONE = '+91-6238083182'
 export const MEDIUM_PROFILE_URL = 'https://augustinejoseph.medium.com/'
 export const GITHUB_LINK = "https://github.com/augustinejoseph"
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/augustinjoseph/"
+export const SKILLS_GOOGLE_SHEETS_LINK = "https://docs.google.com/spreadsheets/d/1aBu1ZQWo6h0Sz7Ck0pyozy29MH4nUTfrsBm-EEFKBFA/pub?output=csv&sheet=SkillList"
+export const PROJECTS_GOOGLE_SHEETS_LINK = "https://docs.google.com/spreadsheets/d/1TBI9uMuO_LAY0_fOS4kVTtdXg_pgCQF9vGi6wCpKWIE/pub?output=csv&sheet=Sheet2"
+export const PROFILE_GOOGLE_SHEETS_LINK = "https://docs.google.com/spreadsheets/d/1aBu1ZQWo6h0Sz7Ck0pyozy29MH4nUTfrsBm-EEFKBFA/pub?output=csv&sheet=Profile"

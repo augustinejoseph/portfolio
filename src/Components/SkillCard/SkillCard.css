@@ -2,7 +2,8 @@
     position: relative;
     width: 13rem;
     height: 9rem;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    /* background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% ); */
+    background: linear-gradient(45deg, #F5E3E6 0%, #D9E4F5 50% );
     border-radius: 10px;
     display: flex;
     align-items: center;

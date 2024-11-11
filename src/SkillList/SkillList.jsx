@@ -1,3 +1,5 @@
+// Not using directly as the new implementation fetches data from google sheets.
+
 import {
   windows,
   restapi,
@@ -7,11 +9,7 @@ import {
   mongodb,
   microservices,
   python,
-  // gmail,
-  // linkedin,
   home,
-  // medium,
-  // github,
   phone,
   aws,
   css,
@@ -112,11 +110,6 @@ export const skillList = [
     skillName: "HTML",
     url: html,
     description: "Markup language for web content.",
-  },
-  {
-    skillName: "Windows",
-    url: windows,
-    description: "Operating system by Microsoft.",
   },
   {
     skillName: "Nginx",

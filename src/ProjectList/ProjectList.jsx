@@ -1,12 +1,11 @@
+// Not using directly as the new implementation fetches data from google sheets.
+
 const DataLensImages = require.context('../Constants/ProjectImages/DataLens', true);
 const DataLensImagesList = DataLensImages.keys().map(image => DataLensImages(image));
-
 const MovieFinderImages = require.context('../Constants/ProjectImages/MovieFinder', true);
 const MovieFinderImagesList = MovieFinderImages.keys().map(image => MovieFinderImages(image));
-
 const HappyFeetzImages = require.context('../Constants/ProjectImages/HappyFeetz', true);
 const HappyFeetzImagesList = HappyFeetzImages.keys().map(image => HappyFeetzImages(image));
-console.log('DataLensImagesList',DataLensImagesList);
 export const projectList = [
   // HAPPY FEETS
   {
@@ -19,7 +18,7 @@ export const projectList = [
       "An E-commerce website that sells footwears. Features like product view, payment, return are implemented.",
     gitHubLink: "https://github.com/augustinejoseph/e-commerce-website",
     liveLink: "http://happyfeetz.in",
-    liveLinkExpired:true,
+    liveLinkExpired: true,
     features: [
       "Fully functional e-commerce website",
       "Features like login, cart, wishlist, Razorpay payment, Razorpay refund, return and so on...",
@@ -47,7 +46,7 @@ export const projectList = [
   {
     project_slug: "movie_finder",
     projectName: "Movie Finder",
-    imageUrl:MovieFinderImagesList,
+    imageUrl: MovieFinderImagesList,
     longDescription:
       "A website that uses TMDB API to fetch movie data and shown using React.",
 
@@ -58,7 +57,7 @@ export const projectList = [
       "Fetching Movie data using TMDB API",
       "Displaying movie information using React",
     ],
-    liveLinkExpired:true,
+    liveLinkExpired: true,
     technologyStacks: [
       "React",
       "Create React App",
@@ -79,7 +78,7 @@ export const projectList = [
     gitHubLink:
       "https://github.com/augustinejoseph/datalens-article-publising-website",
     liveLink: "http://datalens.live",
-    liveLinkExpired:true,
+    liveLinkExpired: true,
     features: [
       "Built for writers to share their thoughts and monetize their free time.",
       "Improved and responsive UI with a modern interface.",

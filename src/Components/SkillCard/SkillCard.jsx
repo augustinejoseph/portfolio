@@ -5,7 +5,7 @@ const SkillCard = (props) => {
   const { title, pictureUrl, description } = props;
   return (
     <div className="skillcard">
-      <img src={pictureUrl} alt="" />
+      <img src={`/static/media/${pictureUrl}`} alt="" />
       
       <div className="skillcard__content">
         <p className="skillcard__title">{title}</p>

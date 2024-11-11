@@ -46,15 +46,16 @@
     margin: 1rem 2rem;
 }
 
-.homepage_profile_picture > img {
+.homepage_profile_picture>img {
     min-height: 25rem;
     min-width: 25rem;
     max-height: 25vh;
-    border-radius: 35% 65% 59% 41% / 43% 39% 61% 57%  ;
+    border-radius: 35% 65% 59% 41% / 43% 39% 61% 57%;
     object-fit: cover;
-    
+
 }
-.homepage_description_contact_container{
+
+.homepage_description_contact_container {
     display: flex;
     flex-direction: column;
     padding: .6rem 0;
@@ -77,11 +78,12 @@
 
 /* --------------------SKILL SECTION----------------------- */
 .homepage_skills_section_container {
-    padding: 2rem 2rem;
-    height: 100vh;
+    /* padding: 2rem 2rem; */
+    height: auto;
 }
-.homepage_skills_container{
-    margin-top: 7rem;
+
+.homepage_skills_container {
+    /* margin-top: 7rem; */
 }
 
 .homepage_skills_title {
@@ -113,7 +115,7 @@
 
 /* ------------------------ARTICLE SECTION------------------ */
 .homepage_articles_container {
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
 }
 
 .homepage_articles {
@@ -126,18 +128,22 @@
 
 .homepage_articles::-webkit-scrollbar {
     width: 8px;
-  }
-  
-  .homepage_articles::-webkit-scrollbar-thumb {
-    background-color: #888; /* Grey color for the scrollbar thumb */
+}
+
+.homepage_articles::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Grey color for the scrollbar thumb */
     border-radius: 4px;
-    height: 2px; /* Set the height of the scrollbar thumb */
-  }
-  
-  .homepage_articles::-webkit-scrollbar-thumb:hover {
-    background-color: #666; /* Darker grey color on hover */
-  }
-.badge-base{
+    height: 2px;
+    /* Set the height of the scrollbar thumb */
+}
+
+.homepage_articles::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
+    /* Darker grey color on hover */
+}
+
+.badge-base {
     background-color: green;
 }
 
@@ -184,7 +190,8 @@
     .homepage_profile_picture {
         margin: 1rem 2rem;
     }
-    .homepage_description_contact_container{
+
+    .homepage_description_contact_container {
         margin: 1rem 2rem;
         cursor: pointer;
         gap: .4rem;
@@ -222,14 +229,3 @@
         height: fit-content;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
