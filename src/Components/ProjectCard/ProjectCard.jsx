@@ -10,7 +10,7 @@ const Projectprojectcard = (props) => {
   return (
     <div className="projectprojectcard_container">
       <div className="projectcard">
-        <img className="projectcard_image" src={`/static/media/${imageUrl}`} alt="" />
+        <img className="projectcard_image" src={`${imageUrl}`} alt="" />
         <div className="projectcard__content">
           <p className="projectcard__title">{projectName}</p>
           <p className="projectcard__description">{description}</p>

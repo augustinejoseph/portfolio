@@ -142,7 +142,7 @@ const FullProject = () => {
               <span className="full_project_subtitle">Images</span>
               <div className="full_project_images">
                 {projectDetails.imageUrl.sort().map((url, index) => (
-                  <img key={index} src={`/static/media/${url}`} alt={`project-${index}`} />
+                  <img key={index} src={`${url}`} alt={`project-${index}`} />
 
                 ))}
               </div>
